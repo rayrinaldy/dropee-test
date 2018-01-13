@@ -2,7 +2,7 @@
 1. NodeJS, jQuery
 
 2. Declare class in javascript:
-    By nature, javascript is based on prototypes and not classes. You can only create a class in ES6.
+    By nature, javascript is based on prototypes and not classes. You can only create a class in ES6. This is example of creating a "class" in javascript ES5 & below:
     
     function DeclareClass(data) {
         this.data = data;
