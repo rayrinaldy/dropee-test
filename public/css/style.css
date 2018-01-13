@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+.color--midnight_blue {
+  background: #2c3e50; }
+
+.color--pomegranate {
+  background: #c0392b; }
+
+.color--clouds {
+  background: #ecf0f1; }
+
+.color--concrete {
+  background: #95a5a6; }
+
+.color--pumpkin {
+  background: #d35400; }
+
 @media (max-width: 991px) {
   .row.no--gutter > [class^="col-"],
   .row.no--gutter > [class*=" col-"] {
@@ -10,7 +25,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background: white;
+  background-color: #ecf0f1;
   font-size: 16px; }
 
 a {
@@ -71,21 +86,6 @@ p {
 .navbar {
   margin-bottom: 0; }
 
-.color--midnight_blue {
-  background: #2c3e50; }
-
-.color--pomegranate {
-  background: #c0392b; }
-
-.color--clouds {
-  background: #ecf0f1; }
-
-.color--concrete {
-  background: #95a5a6; }
-
-.color--pumpkin {
-  background: #d35400; }
-
 .chart--wrapper {
   position: relative;
   height: 50vh;
@@ -99,8 +99,13 @@ p {
   padding-top: 20px; }
 
 .bootstrap-datetimepicker-widget.dropdown-menu {
+  top: 100% !important;
   width: 80%;
-  margin: 0 auto; }
+  border: none;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 .bootstrap-datetimepicker-widget table td.day {
   width: 40px;

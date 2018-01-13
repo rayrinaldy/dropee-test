@@ -9,7 +9,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: 'views/',
-                    src: ['index.pug'],
+                    src: ['*.pug'],
                     dest: 'public',
                     ext: '.html',
                 }]

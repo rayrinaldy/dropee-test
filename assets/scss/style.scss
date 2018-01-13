@@ -25,8 +25,11 @@ $selectedBoxColor: color(pomegranate);
 
 .bootstrap-datetimepicker-widget {
 	&.dropdown-menu {
+		top: 100% !important;
 		width: $calendarWidth + %;
+		border: none;
 		margin: 0 auto;
+		@include transition(all 0.3s ease);
 	}
 	table {
 		td.day {
