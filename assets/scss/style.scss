@@ -1,0 +1,44 @@
+@import "helper"; //Page settings is here
+@import "bourbon";
+
+.chart--wrapper {
+	position: relative;
+	height: 50vh;
+	width: 90vw;
+	margin: 0 auto;
+}
+
+// •••••••••••••••••••••••••••••••••••
+
+$calendarWidth: 80;
+$calendarBoxSize: 40;
+$selectedBoxColor: color(pomegranate);
+
+
+.content--heading {
+	padding-top: 20px;
+}
+
+.calendar--wrapper {
+	padding-top: 20px;
+}
+
+.bootstrap-datetimepicker-widget {
+	&.dropdown-menu {
+		width: $calendarWidth + %;
+		margin: 0 auto;
+	}
+	table {
+		td.day {
+			width: $calendarBoxSize + px;
+			height: $calendarBoxSize + px;
+			line-height: $calendarBoxSize + px;
+		}
+	}
+}
+
+.bootstrap-datetimepicker-widget table td.active, 
+.bootstrap-datetimepicker-widget table td.active:hover, 
+.bootstrap-datetimepicker-widget table td span.active {
+	background-color: $selectedBoxColor;
+}

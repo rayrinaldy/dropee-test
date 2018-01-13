@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@media (max-width: 991px) {
+  .row.no--gutter > [class^="col-"],
+  .row.no--gutter > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0; } }
+
+* {
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: white;
+  font-size: 16px; }
+
+a {
+  color: #404040; }
+
+a:hover {
+  color: rgba(255, 255, 255, 0.6); }
+
+a, a:hover, a:active, a:focus {
+  text-decoration: none; }
+
+input, textarea, select, button {
+  box-sizing: border-box; }
+  input:focus, textarea:focus, select:focus, button:focus {
+    outline: none; }
+
+a, input {
+  transition: all 0.3s ease; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+li + li {
+  padding-top: 10px; }
+
+p {
+  margin: 0 0 0; }
+
+.text--size__normal {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: normal; }
+  @media screen and (max-width: 991px) {
+    .text--size__normal {
+      font-size: 16px;
+      line-height: 1.4; } }
+  @media screen and (max-width: 767px) {
+    .text--size__normal {
+      font-size: 15px;
+      line-height: 1.4; } }
+  @media screen and (max-width: 479px) {
+    .text--size__normal {
+      font-size: 15px;
+      line-height: 1.4; } }
+
+.text--size__small {
+  font-size: 50%; }
+
+.navbar {
+  margin-bottom: 0; }
+
+.color--midnight_blue {
+  background: #2c3e50; }
+
+.color--pomegranate {
+  background: #c0392b; }
+
+.color--clouds {
+  background: #ecf0f1; }
+
+.color--concrete {
+  background: #95a5a6; }
+
+.color--pumpkin {
+  background: #d35400; }
+
+.chart--wrapper {
+  position: relative;
+  height: 50vh;
+  width: 90vw;
+  margin: 0 auto; }
+
+.content--heading {
+  padding-top: 20px; }
+
+.calendar--wrapper {
+  padding-top: 20px; }
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+  width: 80%;
+  margin: 0 auto; }
+
+.bootstrap-datetimepicker-widget table td.day {
+  width: 40px;
+  height: 40px;
+  line-height: 40px; }
+
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover,
+.bootstrap-datetimepicker-widget table td span.active {
+  background-color: #c0392b; }

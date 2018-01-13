@@ -1,0 +1,21 @@
+extends layout
+
+block content
+	.container-fluid
+		h1.content--heading.text-center: strong Click on the Calendar
+		
+		.calendar--wrapper
+			.row
+				.col-sm-6
+					.form-group
+						.input-group.date
+							input#datetimepicker1.form-control(type='text')
+							span.input-group-addon
+								span.glyphicon.glyphicon-calendar
+
+				.col-sm-6
+					.form-group
+						.input-group.date
+							input#datetimepicker2.form-control(type='text')
+							span.input-group-addon
+								span.glyphicon.glyphicon-calendar

@@ -1,0 +1,38 @@
+block variable
+
+-
+	var timeTag = Math.round(Date.now()/10000);
+
+doctype html
+html
+	head
+		title= title
+
+		block css
+
+		link(rel='stylesheet', href='css/bootstrap.css')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css')
+		link(rel='stylesheet', href='css/style.css?v=#{timeTag}')
+	body
+		nav.navbar.navbar-inverse
+			.container-fluid
+				.navbar-header
+					button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a.navbar-brand(href='#') Dropee Challenge
+					
+
+		block content
+		
+		block js
+		script(src="js/jquery.js")
+		script(src="js/moment.js")
+		script(src="js/bootstrap.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js")
+		script(src="js/script.js?v=#{timeTag}")
+
+
+		block scripts
